@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill-Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- form to be filled -->
+    <form>
+        <label>Fill the Details </label>
+        <!-- * marked for required fields -->
+        <!-- fullname  -->
+        <fieldset>
+            <!-- naming -->
+            <label for="full-name"><span style="color: red;">* </span>Full Name</label>
+            <!-- input area -->
+            <input type="text" id="full-name" />
+        </fieldset>
+        <!-- phone number -->
+        <fieldset>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" />
+        </fieldset>
+        <!-- email -->
+        <fieldset>
+            <label for="email"><span style="color: red;">* </span>Email</label>
+            <input type="email" id="email" />
+        </fieldset>
+        <!-- resume -->
+        <fieldset>
+            <label for="resume"><span style="color: red;">* </span>Upload Resume [Max-size:2MB]</label>
+            <input type="file" id="resume" accept=".pdf,.doc,.docx" />
+        </fieldset>
+        <!-- submit -->
+        <button type="submit" id="btn">Submit Application</button>
+    </form>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
+
